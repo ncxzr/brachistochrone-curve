@@ -1,6 +1,6 @@
 import numpy as np
 import matplotlib.pyplot as plt
-
+ 
 # ── settings SI UNIT ──────────────────────────────────────────────
 g   = 9.81   # gravity 
 dx  = 2.0    # horizontal distance 
