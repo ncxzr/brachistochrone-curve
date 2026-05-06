@@ -14,4 +14,4 @@ python main.py
 
 ## Output
 
-![Brachistochrone Curve](curve.jpg)
+![Brachistochrone Curve](python main.pyg)
