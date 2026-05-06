@@ -10,6 +10,7 @@ This simulation solves the brachistochrone problem, where we look for the curve 
 ## Usage
 python main.py
 
-result 
-curve.jpg
+## Output
+
+![Brachistochrone Curve](curve.jpg)
 
