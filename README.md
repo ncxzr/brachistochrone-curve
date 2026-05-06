@@ -13,7 +13,7 @@ This problem is a classic example from the calculus of variations, demonstrating
 ## Usage
 
 Run the simulation:
-
+ 
 
 RESULT
 ![Brachistochrone Curve](curve.jpg)
