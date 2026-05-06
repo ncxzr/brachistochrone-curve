@@ -1,11 +1,11 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
-# ── settings ──────────────────────────────────────────────
-g   = 9.81   # gravity (m/s²)
-dx  = 2.0    # horizontal distance (m)
-dy  = 1.5    # vertical drop (m)
-mu  = 0.0    # friction coefficient (set to 0.1, 0.2 etc. to explore)
+# ── settings SI UNIT ──────────────────────────────────────────────
+g   = 9.81   # gravity 
+dx  = 2.0    # horizontal distance 
+dy  = 1.5    # vertical drop 
+mu  = 0.0    # friction coefficient 
 N   = 500    # number of points along each curve
 
 # ── 1. define the four curves ──────────────────────────────
@@ -17,7 +17,7 @@ t = np.linspace(0, 1, N)
 x_line = t * dx
 y_line = t * dy
 
-# parabola (dips down then comes back up a bit)
+# parabola
 x_para = t * dx
 y_para = t * dy + np.sin(np.pi * t) * dy * 0.5
 
@@ -32,11 +32,11 @@ y_circ      = cy + radius * np.sin(angles)
 
 # cycloid — the theoretical winner
 # parametric form: x = r(t - sin t), y = r(1 - cos t)
-# we solve for the parameter T that makes the curve hit (dx, dy)
+#  solve for the parameter T that makes the curve hit (dx, dy)
 def find_T(dx, dy, T_guess=2.0):
     ratio = dy / dx
     T = T_guess
-    for _ in range(100):                         # Newton's method
+    for _ in range(100):                         # Newton METHOD
         fx  = (1 - np.cos(T)) / (T - np.sin(T)) - ratio
         dfx = (np.sin(T) * (T - np.sin(T)) - (1 - np.cos(T))**2) / (T - np.sin(T))**2
         T  -= fx / dfx
@@ -52,7 +52,6 @@ y_cycl = r * (1 - np.cos(tp))
 
 
 # ── 2. simulate bead travel time ──────────────────────────
-# physics: at each small step ds, use energy conservation + friction
 # v² = v₀² + 2*(g_tangential - friction)*ds
 
 def travel_time(xs, ys, mu):
