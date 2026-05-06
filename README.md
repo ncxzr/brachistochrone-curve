@@ -12,6 +12,6 @@ python main.py
 
 ## Output
 
-<p align="center">
-  <img src="curve.jpg" width="500"/>
-</p>
+## Output
+
+![Brachistochrone Curve](curve.jpg)
