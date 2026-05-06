@@ -17,3 +17,6 @@ Run the simulation:
 
 RESULT
 ![Brachistochrone Curve](curve.jpg)
+
+
+The cycloid curve reaches the endpoint faster than the straight line, confirming the brachistochrone principle.
