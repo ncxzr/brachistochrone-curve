@@ -11,7 +11,4 @@ This simulation solves the brachistochrone problem, where we look for the curve 
 python main.py
 
 ## Output
-
-## Output
-
-![Brachistochrone Curve](result curve.jpg)
+![Brachistochrone Curve](curve.jpg)
